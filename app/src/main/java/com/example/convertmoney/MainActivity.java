@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
             progressDialog = new ProgressDialog(MainActivity.this);
-            progressDialog.setMessage("Fetching conntry data");
+            progressDialog.setMessage("Fetching data");
             progressDialog.setCancelable(false);
             progressDialog.show();
         }
