@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //Get view from activity
         spnFrom = (Spinner) findViewById(R.id.spinnerFrom);
         spnTo = (Spinner) findViewById(R.id.spinnerTo);
@@ -66,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         resultRecycleView =(RecyclerView) findViewById(R.id.result) ;
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         resultRecycleView.setLayoutManager(layoutManager);
-
         //Set list country data
         listCountry.add("None");
         new GetDataCountry().execute();
